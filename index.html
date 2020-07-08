@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body id="color">
+    <header>
+        <div id="logo">
+           <h1>logo</h1>
+            <a href="#" onclick="addNav()"><img src="assets/img/iconmonstr-menu-1.svg" alt="" id="hamburger"></a>
+        </div>
+        <nav class="hide" id="menu">
+            <a id="cross" href="#" onclick="removeNav()">X</a>
+            <ul>
+                <li><a href="">HOME</a></li>
+                <li><a href="">ABOUT</a></li>
+                <li><a href="">CONTACT</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="image">
+    </section>
+    <section id="text">
+        <h1>Headline 1</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum dolorem perferendis, quibusdam facilis architecto quas!</p>
+    </section>
+    <section id="apply">
+        <div>
+            <h1>How do I apply? 
+                <button id="how-plus" onclick="howPlus()" class="show-button">+</button>
+                <button id="how-minus" onclick="howMinus()" class="hide">-</button>
+                </h1>
+            <p id="how" class="hide">Hier ist eine kurze Antwort</p>
+        </div>
+        <div>
+            <h1>What are entry requirements? 
+                <button id="what-plus" onclick="whatPlus()" class="show-button">+</button>
+                <button id="what-minus" onclick="whatMinus()" class="hide">-</button>
+            </h1>
+            <p id="what" class="hide">Hier ist eine kurze Antwort</p>
+        </div>
+    </section>
+    <section id="buttons">
+      <button id="button1" onclick="blackWhite()">Click me</button>
+      <button id="button2" onclick="whiteBlack()">Click me</button>
+      <button id="button3" onclick="pinkGray()">Click me</button>
+    </section>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
